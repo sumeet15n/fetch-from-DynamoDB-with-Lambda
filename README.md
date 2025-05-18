@@ -109,13 +109,13 @@ Upon clicking on 'Test', the test ran successfully, but I encountered an error i
 
 Although an execution role was created for my Lambda function, I hadn't given it explicit permission to access my DynamoDB table, so DynamoDB did not let Lambda access it, because of which this error was encountered.
 
-### Step 5: Grant Lambda the Read Access to DynamoDB
+### Step 6: Grant Lambda the Read Access to DynamoDB
 
 I navigated to the 'Permissions' tab of my Lambda function, clicked on execution role that was created when I created the Lambda function, and I was redirected to IAM with the role page open. In the role, I attached the policy 'AmazonDynamoDBReadOnlyAccess', as shown in the below screenshot, as this policy gives the access to read from DynamoDB (contains the GetItem permission).
 
 ![Image](https://github.com/sumeet15n/fetch-from-DynamoDB-with-Lambda/blob/master/Screenshots/SS4.png)
 
-### Step 6: Retest the Lambda Function
+### Step 7: Retest the Lambda Function
 
 I then ran the Lambda function test again, and I noticed that the error was resolved.
 
@@ -123,7 +123,7 @@ A screenshot of the success message and the successfully retrieved data from Dyn
 
 ![Image](https://github.com/sumeet15n/fetch-from-DynamoDB-with-Lambda/blob/master/Screenshots/SS5.png)
 
-### Step 7: Delete Resources
+### Step 8: Delete Resources
 
 Finally, I deleted all the created resources after completing this project to avoid any further charges on AWS.
 

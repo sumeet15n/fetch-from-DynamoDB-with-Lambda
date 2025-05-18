@@ -2,7 +2,7 @@
 
 ## Introducing this Project!
 
-In this project, I set up the data layer of a three-tier web app.
+In this project, I set up the data tier of a three-tier web app.
 
 ### Services Used
 
